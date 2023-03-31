@@ -8,7 +8,7 @@ const sliceNames = names.slice(1,3) // pode passar 1 argumento, e ele fatia da p
 // slice retorna um novo array com base no array original, sem modifica-lo. Posso tanto reatribuir a uma nova const para ter os valores fatiados nela.
 console.log(sliceNames)
 
-//Splice - remove com base no indice, e se você quiser ele adiciona valores no lugar (adiciona no array original, novos arrays não recebem o valor), e remove de acordo com a quantidade de elementos que você definir - (indice, quantidade de items contando o indice inicial, valor que quiser adicionar- não é required)
+//Splice - ALTERA O ARRAY ORIGINAL remove com base no indice, e se você quiser ele adiciona valores no lugar (adiciona no array original, novos arrays não recebem o valor), e remove de acordo com a quantidade de elementos que você definir - (indice, quantidade de items contando o indice inicial, valor que quiser adicionar- não é required)
 
 const namesSplice = ['Alexandre','Lua','tomas','lola','alx','sedex','Alexandre']
 
@@ -18,3 +18,23 @@ console.log(namesSplice)// sub array do array original
 //Posso tanto reatribuir a uma nova const para ter os valores fatiados nela.
 const sNames = namesSplice.splice(2,2)
 console.log(sNames) // novo array
+
+//CONCAT - RETORNA UM NOVO ARRAY juntando dois arrays, sendo esse join na ordem que for aplicado o CONCAT
+
+const listOne = ['Romeu', 'Julieta']
+
+const listTwo = ['A bela', 'A fera']
+
+const joinLists = listOne.concat(listTwo)
+
+console.log(joinLists)
+
+// Matriz. Acesso de lista dentro de lista
+
+const alumni = ['Romeu', 'Julieta']
+const average = [8, 9]
+
+const vetorList = [alumni, average]
+
+console.log(vetorList[0][1])
+
