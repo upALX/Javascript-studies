@@ -38,3 +38,19 @@ for (let nota of notes){
 const averageOf = (sumOf / notes.length)
 
 console.log(`A média com for of é igual a ${average}`)
+
+// Average with FOR EACH - method of array
+// o forEach além dos valores ele consegue mexer nos indexes
+
+const notesEach = [5,9,7,3,5,4]
+
+sumEach = 0
+notesEach.forEach((note, index)=>{
+    sumEach += note 
+    
+    console.log(`A nota ${note} na posicao ${index} foi adicionada a soma!`)
+
+})
+
+console.log(sumEach)
+ 
